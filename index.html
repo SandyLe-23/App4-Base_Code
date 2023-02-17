@@ -37,22 +37,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </head> 
 
 <script>
-        var allergy_count = 0; //set allergy count to 0
-        var cold_count = 0; //set cold count to 0
+        var psoriasis_count = 0; //set psoriasis count to 0
+        var eczema_count = 0; //set eczema count to 0
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1; //question answered relates to allergy, add 1 to allergy count
-		alert(allergy_count); //notification of count when question answered relates to allergy
+        function psoriasisAdd(){
+            psoriasis_count = psoriasis_count + 1; //question answered relates to psoriasis, add 1 to psoriasis count
+		alert(psoriasis_count); //notification of count when question answered relates to psoriasis
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1; //question answered relates to cold, add 1 to cold count
+        function eczemaAdd(){
+            eczema_count = eczema_count + 1; //question answered relates to eczema, add 1 to eczema count
         }
 	
 	function getResults(){
-	    var allergyPercent = (allergy_count / 4) * 100; //calculate percent chance of allergy using allergy count and dividing by the # of questions times 100
-	    var coldPercent = (cold_count / 4) * 100; //calculate percent chance of cold using cold count and dividing by the # of questions times 100
-		document.getElementById("results").innerHTML = "Probability it is allergies = " + allergyPercent + "<br> Probability it is a cold = " + coldPercent; //connects to result page to display percent chance of both allergy and cold
+	    var psoriasisPercent = (psoriasis_count / 4) * 100; //calculate percent chance of psoriasis using psoriasis count and dividing by the # of questions times 100
+	    var eczemaPercent = (eczema_count / 4) * 100; //calculate percent chance of eczema using eczema count and dividing by the # of questions times 100
+		document.getElementById("results").innerHTML = "Probability it is allergies = " + psoriasisPercent + "<br> Probability it is a eczema = " + eczemaPercent; //connects to result page to display percent chance of both psoriasis and eczema
 	}
 </script>	
 
@@ -82,12 +82,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot"> <!-- header design -->
-	<h1>Cold or Allergies?</h1> <!-- header text -->
+	<h1>Eczema or Psoriasis?</h1> <!-- header text -->
 </div> <!-- ends header section -->
 
 <!-- Opening page of app -->
 <div id="content" class="w3-container"> <!-- content design -->
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p> <!-- short introduction text -->
+	<p>Do you have itchy spots that you're unsure whether you have psoriasis or eczema? Answer a few short questions to find out!</p> <!-- short introduction text -->
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!-- first button, allows user to begin survey -->
 	
@@ -104,9 +104,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!-- first page body text -->
         	<p>Are your eyes watery or itchy?</p> <!-- first text to user after pressing "Get Started" button -->
 		
-		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page two -->
+		<a href="#two" onclick="psoriasisAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page two -->
 		
-		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to page two -->
+		<a href="#two" onclick="eczemaAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to page two -->
 		
     	</div> <!-- end of first page body text -->
 </div> <!-- end of first page design -->
@@ -120,9 +120,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!-- second page body text -->
 		<p>Do you have a fever?</p> <!-- text displayed on second page after answering first question -->
 		
-		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page three -->
+		<a href="#three" onclick="eczemaAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page three -->
 		
-		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to page three -->
+		<a href="#three" onclick="psoriasisAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to page three -->
 		
 	</div> <!-- end of second page body text -->
 </div> <!-- end of second page design -->
@@ -136,9 +136,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!-- third page body text -->
 		<p>Do you have a sore throat?</p> <!-- text displayed on third page after answering second question -->
 		
-		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page four -->
+		<a href="#four" onclick="eczemaAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page four -->
 		
-		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to page four -->
+		<a href="#four" onclick="psoriasisAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to page four -->
 		
 	</div> <!-- end of third page body text -->
 </div>	<!-- end of third page design -->
@@ -152,9 +152,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container"> <!-- fourth page body text -->
 		<p>Are your symptoms seasonal or chronic?</p> <!-- text displayed on third page after answering the third question -->
 		
-		<a href="#end" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to results page -->
+		<a href="#end" onclick="psoriasisAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to results page -->
 		
-		<a href="#end" onclick="coldAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to results page -->
+		<a href="#end" onclick="eczemaAdd();" class="w3-btn w3-black"> No </a> <!-- No button moves to results page -->
 		
 	</div> <!-- end of fourth page body text -->
 </div>	<!-- end of fourth page design -->
