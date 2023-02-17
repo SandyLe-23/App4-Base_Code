@@ -52,7 +52,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function getResults(){
 	    var psoriasisPercent = (psoriasis_count / 4) * 100; //calculate percent chance of psoriasis using psoriasis count and dividing by the # of questions times 100
 	    var eczemaPercent = (eczema_count / 4) * 100; //calculate percent chance of eczema using eczema count and dividing by the # of questions times 100
-		document.getElementById("results").innerHTML = "Probability it is allergies = " + psoriasisPercent + "<br> Probability it is a eczema = " + eczemaPercent; //connects to result page to display percent chance of both psoriasis and eczema
+		document.getElementById("results").innerHTML = "Probability it is psoriasis = " + psoriasisPercent + "<br> Probability it is a eczema = " + eczemaPercent; //connects to result page to display percent chance of both psoriasis and eczema
 	}
 </script>	
 
@@ -102,7 +102,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!-- end of first page header design -->
 	
 	<div id="content" class="w3-container"> <!-- first page body text -->
-        	<p>Are your eyes watery or itchy?</p> <!-- first text to user after pressing "Get Started" button -->
+        	<p>Are there thick plaques piling up on your skin?</p> <!-- first text to user after pressing "Get Started" button -->
 		
 		<a href="#two" onclick="psoriasisAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page two -->
 		
@@ -118,7 +118,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!-- end of second page header design -->
 	
 	<div id="content" class="w3-container"> <!-- second page body text -->
-		<p>Do you have a fever?</p> <!-- text displayed on second page after answering first question -->
+		<p>Did your symptoms appear at a young age?</p> <!-- text displayed on second page after answering first question -->
 		
 		<a href="#three" onclick="eczemaAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page three -->
 		
@@ -134,7 +134,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!-- end of third page header design -->
 	
 	<div id="content" class="w3-container"> <!-- third page body text -->
-		<p>Do you have a sore throat?</p> <!-- text displayed on third page after answering second question -->
+		<p>Is your skin oozing and crusting?</p> <!-- text displayed on third page after answering second question -->
 		
 		<a href="#four" onclick="eczemaAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to page four -->
 		
@@ -150,7 +150,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!-- end of fourth page header design -->
 	
 	<div id="content" class="w3-container"> <!-- fourth page body text -->
-		<p>Are your symptoms seasonal or chronic?</p> <!-- text displayed on third page after answering the third question -->
+		<p>Are your nails brittle and damaged?</p> <!-- text displayed on third page after answering the third question -->
 		
 		<a href="#end" onclick="psoriasisAdd();" class="w3-btn w3-black"> Yes </a> <!-- Yes button moves to results page -->
 		
